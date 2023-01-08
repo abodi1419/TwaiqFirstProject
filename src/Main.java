@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Main {
+    // First project ever
     public static void main(String[] args) throws IOException {
 //        writePlease("Welcome to first file\nThis is example file.","Example");
         writeLine("Appended line","Example");
