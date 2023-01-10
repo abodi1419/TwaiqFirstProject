@@ -7,106 +7,34 @@ public class Main {
     // First project ever
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        n12Task(sc);
-//        eleventhTask(sc);
+
 //        tenthTask(sc);
-//        System.out.println("================ First task ================");
-//        firstTask(sc);
-//        System.out.println("================ Second task ================");
-//        secondTask(sc);
-//        System.out.println("================ Third task ================");
-//        thirdTask(sc);
-//        System.out.println("================ Fourth task ================");
-//        fourthTask(sc);
-//        System.out.println("================ Fifth task ================");
-//        fifthTask(sc);
-//        System.out.println("================ Sixth task ================");
-//        sixthTask(sc);
-//        System.out.println("================ Seventh task ================");
-//        seventhTask(sc);
-//        System.out.println("================ Eighth task ================");
-//        eightTask(sc);
-//        System.out.println("================ Ninth task ================");
-//        ninthTask(sc);
+        System.out.println("================ First task ================");
+        firstTask(sc);
+        System.out.println("================ Second task ================");
+        secondTask(sc);
+        System.out.println("================ Third task ================");
+        thirdTask(sc);
+        System.out.println("================ Fourth task ================");
+        fourthTask(sc);
+        System.out.println("================ Fifth task ================");
+        fifthTask(sc);
+        System.out.println("================ Sixth task ================");
+        sixthTask(sc);
+        System.out.println("================ Seventh task ================");
+        seventhTask(sc);
+        System.out.println("================ Eighth task ================");
+        eightTask(sc);
+        System.out.println("================ Ninth task ================");
+        ninthTask(sc);
 
 
     }
 
 
-    public static void n12Task(Scanner sc) {
-        while (true) {
 
-            try {
-                System.out.print("Enter width: ");
-                int num = Integer.parseInt(sc.next());
-                for (int i = 0; i < num; i++) {
-                    for (int j = 0; j < num; j++) {
-                        if (i == 0) {
-                            System.out.print("#");
-                        } else {
-                            if (i == num - 1) {
-                                System.out.print("#");
-                            } else {
-                                if (j == 0 || j == num - 1) {
-                                    System.out.print("#");
-                                }else {
-                                    System.out.print(" ");
-                                }
-                            }
-                        }
-                    }
-                    System.out.println();
-                }
-            } catch (NumberFormatException e) {
-                System.err.println("Enter an integer number!");
-                continue;
-            }
 
-        }
-    }
 
-    public static void eleventhTask(Scanner sc){
-        while (true) {
-
-            try {
-                System.out.print("Enter width: ");
-                int width = Integer.parseInt(sc.next());
-                System.out.print("Enter height: ");
-                int height = Integer.parseInt(sc.next());
-                for (int i=0; i<height; i++){
-                    for (int j=0; j<width; j++){
-                        System.out.print("#");
-                    }
-                    System.out.println();
-                }
-            } catch (NumberFormatException e) {
-                System.err.println("Enter an integer number!");
-                continue;
-            }
-
-        }
-    }
-
-    public static void tenthTask(Scanner sc){
-        int sum=0;
-        while (true) {
-
-            try {
-                System.out.print("Enter a number (-1 exit): ");
-                int num = Integer.parseInt(sc.next());
-                if(num==-1){
-                    System.out.println("The sum is: "+sum);
-                    break;
-                }
-
-                sum+=num;
-            } catch (NumberFormatException e) {
-                System.err.println("Enter an integer number!");
-                continue;
-            }
-
-        }
-    }
 
     public static void firstTask(Scanner sc){
         while (true) {

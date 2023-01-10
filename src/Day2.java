@@ -3,24 +3,24 @@ import java.util.Scanner;
 public class Day2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("====================== First task ======================");
+        System.out.println("====================== 3 and 5 multiples task ======================");
         firstTask();
-        // Task two was made in Main.java
-        System.out.println("====================== Third task ======================");
+        // Task two was made in Main.java as "fourthTask(Scanner sc)"
+        System.out.println("====================== Multiplication table task ======================");
         thirdTask(sc);
-        System.out.println("====================== Fourth task ======================");
+        System.out.println("====================== Factorial task ======================");
         fourthTask(sc);
-        System.out.println("====================== Fifth task ======================");
+        System.out.println("====================== Power task ======================");
         fifthTask(sc);
-        System.out.println("====================== Sixth task ======================");
+        System.out.println("====================== Odd and even sum task ======================");
         sixthTask(sc);
-        System.out.println("====================== Seventh task ======================");
+        System.out.println("====================== Prime check task ======================");
         seventhTask(sc);
-        System.out.println("====================== Eighth task ======================");
+        System.out.println("====================== Positive, Negative and Zeros count task ======================");
         n8Task(sc);
-        System.out.println("====================== Ninth task ======================");
+        System.out.println("====================== Week and days task ======================");
         n9Task();
-        System.out.println("====================== Tenth task ======================");
+        System.out.println("====================== Palindrome check task ======================");
         n10Task(sc);
     }
 
@@ -160,6 +160,9 @@ public class Day2 {
                     System.out.println("Positive count: "+positive);
                     System.out.println("Negative count: "+negative);
                     System.out.println("Zeros count: "+zeros);
+                    System.out.println("Press enter to continue");
+                    sc.nextLine();
+                    sc.nextLine();
                     return;
                 }
                 int num = Integer.parseInt(input);
@@ -188,7 +191,7 @@ public class Day2 {
         for (int i=1;i<=4;i++){
             System.out.println("Week "+i);
             for (int j=1; j<=7;j++){
-                System.out.println("Day "+j);
+                System.out.println("\tDay "+j);
             }
         }
     }
@@ -201,9 +204,88 @@ public class Day2 {
             output+=text.charAt(i);
         }
         if(text.equalsIgnoreCase(output)){
-            System.out.println("It is a palindrome.");
+            System.out.println(text+ " is a palindrome.");
         }else {
-            System.out.println("It is not a palindrome.");
+            System.out.println(text+ " is not a palindrome.");
         }
     }
+
+    // In Class Practice
+
+
+    public static void practice1(Scanner sc){
+        int sum=0;
+        while (true) {
+
+            try {
+                System.out.print("Enter a number (-1 exit): ");
+                int num = Integer.parseInt(sc.next());
+                if(num==-1){
+                    System.out.println("The sum is: "+sum);
+                    break;
+                }
+
+                sum+=num;
+            } catch (NumberFormatException e) {
+                System.err.println("Enter an integer number!");
+                continue;
+            }
+
+        }
+    }
+    public static void practice2(Scanner sc){
+        while (true) {
+
+            try {
+                System.out.print("Enter width: ");
+                int width = Integer.parseInt(sc.next());
+                System.out.print("Enter height: ");
+                int height = Integer.parseInt(sc.next());
+                for (int i=0; i<height; i++){
+                    for (int j=0; j<width; j++){
+                        System.out.print("#");
+                    }
+                    System.out.println();
+                }
+            } catch (NumberFormatException e) {
+                System.err.println("Enter an integer number!");
+                continue;
+            }
+
+        }
+    }
+
+    public static void practice3(Scanner sc) {
+        while (true) {
+
+            try {
+                System.out.print("Enter width: ");
+                int num = Integer.parseInt(sc.next());
+                for (int i = 0; i < num; i++) {
+                    for (int j = 0; j < num; j++) {
+                        if (i == 0) {
+                            System.out.print("#");
+                        } else {
+                            if (i == num - 1) {
+                                System.out.print("#");
+                            } else {
+                                if (j == 0 || j == num - 1) {
+                                    System.out.print("#");
+                                }else {
+                                    System.out.print(" ");
+                                }
+                            }
+                        }
+                    }
+                    System.out.println();
+                }
+            } catch (NumberFormatException e) {
+                System.err.println("Enter an integer number!");
+                continue;
+            }
+
+        }
+    }
+
+
 }
