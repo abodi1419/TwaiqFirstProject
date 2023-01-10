@@ -42,6 +42,11 @@ public class Day2 {
             System.out.print("Input a positive integer: ");
             try {
                 int num = Integer.parseInt(sc.next());
+                if(num<0){
+                    System.err.println("Enter a positive integer!");
+                    System.out.println();
+                    continue;
+                }
                 System.out.println("-- Multiplication table of "+num+" --");
                 for (int i=1;i<=10;i++){
                     System.out.println("\t"+i+" X "+num+" = "+(i*num));
