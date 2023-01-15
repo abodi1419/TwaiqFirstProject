@@ -2,47 +2,16 @@ import java.util.Scanner;
 
 public class Project1 {
 
+    /*
+    9-1/3
+    8-1/3
+    7-
+     */
     static String selected="";
     static char [][] ticTac;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        initTicTac();
-        System.out.println("Welcome to Tic Tac Toe");
-        printTicTac();
 
-        System.out.println();
-        while (true) {
-            System.out.print("Enter your choice: ");
-            try {
-                int choice = Integer.parseInt(sc.next());
-                if (choice>9 || choice<1) {
-                    System.out.println("Invalid number!");
-                    continue;
-                }
-                if(selectPlace(choice,'X')==-1){
-                    continue;
-                };
-
-                printTicTac();
-                if(checkWinner()){
-                    System.out.println("Press enter to continue..");
-                    sc.nextLine();
-                    sc.nextLine();
-                    continue;
-                }
-                computerTurn();
-                printTicTac();
-                if(checkWinner()){
-                    System.out.println("Press enter to continue..");
-                    sc.nextLine();
-                    sc.nextLine();
-                }
-
-            }catch (NumberFormatException e){
-                System.out.println("Invalid input enter integer!");
-            }
-
-        }
     }
 
     public static int selectPlace(int choice, char fill){
