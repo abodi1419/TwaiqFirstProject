@@ -1,4 +1,4 @@
-package Week2.W2D3Practice;
+package HOMEWORK8;
 
 public class Main {
     public static void main(String[] args) {

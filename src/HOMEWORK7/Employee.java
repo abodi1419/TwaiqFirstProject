@@ -1,4 +1,4 @@
-package Week2.W2D2Practice;
+package HOMEWORK7;
 
 public class Employee {
     private String id;

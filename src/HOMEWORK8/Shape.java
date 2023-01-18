@@ -1,4 +1,4 @@
-package Week2.W2D3Practice;
+package HOMEWORK8;
 
 public class Shape {
     private String color;
