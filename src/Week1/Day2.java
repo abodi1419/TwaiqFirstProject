@@ -1,3 +1,5 @@
+package Week1;
+
 import java.util.Scanner;
 
 public class Day2 {
@@ -5,7 +7,7 @@ public class Day2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("====================== 3 and 5 multiples task ======================");
         firstTask();
-        // Task two was made in Main.java as "fourthTask(Scanner sc)"
+        // Task two was made in Week1.Main.java as "fourthTask(Scanner sc)"
         System.out.println("====================== Multiplication table task ======================");
         thirdTask(sc);
         System.out.println("====================== Factorial task ======================");

@@ -1,3 +1,5 @@
+package Week2;
+
 class Student{
     private String firstName;
     private String lastName;
@@ -74,7 +76,7 @@ public class W2D2 {
     }
 
     public static void printStudent(Student st){
-        System.out.println("================== Student info ====================");
+        System.out.println("================== Week2.Student info ====================");
         System.out.println("Name: " + st.getFirstName()+" "+st.getLastName());
         System.out.println("Phone number: "+ st.getPhoneNumber());
         System.out.println("Email: "+ st.getEmail());
