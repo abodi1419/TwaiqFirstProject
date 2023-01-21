@@ -11,7 +11,7 @@ abstract class Teacher extends Person {
 
     abstract double getSalary();
 
-    public void setSalary(double salary) {
+    public final void setSalary(double salary){
         this.salary = salary;
-    }
+    } ;
 }
